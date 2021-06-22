@@ -52,9 +52,7 @@ $data6 = json_decode($data6, TRUE);
 
             <!-- Main Content -->
             <div id="content">
-
                 <!-- Begin Page Content -->
-                
                 <p class="highcharts-description">
                 Berikut merupakan OLAP dari SAKILA yang diintegrasikan dengan Mondrian.
                 </p>
