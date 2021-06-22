@@ -51,10 +51,25 @@
              <span>Data Pendapatan dari Setiap Kategori</span></a>
      </li>
 
-     <!-- Divider -->
-     <hr class="sidebar-divider">
+    <!-- Divider -->
+    <hr class="sidebar-divider">
 
+    <!-- Heading User Profile-->
+    <div class="sidebar-heading">
+        OLAP
+    </div>
+
+    <!-- Nav Item - My Profile -->
+    <li class="nav-item">
+        <a class="nav-link" href="olap.php">
+        <i class="fas fa-database"></i>
+            <span>Mondrian</span></a>
+    </li>
      <!-- Heading Data Customer-->
+
+          <!-- Divider -->
+          <hr class="sidebar-divider d-none d-md-block">
+
  
      <!-- Nav Item - Logout -->
      <li class="nav-item">

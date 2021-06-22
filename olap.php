@@ -19,7 +19,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/startbootstrap-sb-admin-2/4.1.3/css/sb-admin-2.min.css" rel="stylesheet">
 
     <link rel="stylesheet" href="css/styleGraph.css">
-
+    
     <script src="https://code.highcharts.com/highcharts.js"></script>
     <script src="https://code.highcharts.com/modules/data.js"></script>
     <script src="https://code.highcharts.com/modules/drilldown.js"></script>
@@ -33,10 +33,11 @@
 
 <?php 
 //data barchart
-include 'data7.php';
+include 'data5.php';
+include 'data6.php';
 
-$data7 = json_decode($data7, TRUE);
-
+$data5 = json_decode($data5, TRUE);
+$data6 = json_decode($data6, TRUE);
 ?>
 
     <!-- Page Wrapper -->
@@ -54,11 +55,13 @@ $data7 = json_decode($data7, TRUE);
 
                 <!-- Begin Page Content -->
                 
-                <div id="linechart" class="grafik"></div>
                 <p class="highcharts-description">
-                Berikut merupakan grafik untuk menampilkan durasi lama pinjam film setiap kategori pada persewaan dari sakila berdasarkan kategori.
+                Berikut merupakan OLAP dari SAKILA yang diintegrasikan dengan Mondrian.
                 </p>
                 <!-- /.container-fluid -->
+                <br>
+                <iframe name="mondrian" src="http://localhost:8080/mondrian/index.html"></iframe>
+                <br>
             </div>
             <!-- End of Main Content -->
 
@@ -81,53 +84,8 @@ $data7 = json_decode($data7, TRUE);
     <!-- Scroll to Top Button-->
     <a class="scroll-to-top rounded" href="#page-top">
         <i class="fas fa-angle-up"></i>
+    </a>
 
-    <script type="text/javascript">
-        //create linechart
-        Highcharts.chart('linechart', {
-            chart: {
-                type: 'line'
-            },
-            title: {
-                text: 'Data Lama Pinjam Setiap Kategori Film'
-            },
-            subtitle: {
-                text: 'Source: Database WHSakila2021'
-            },
-            xAxis: {
-                categories: [
-                    <?php for ($i=0; $i < count($data7); $i++):?>
-                        <?= $data7[$i]["bulan"]; ?>,
-                    <?php endfor;?>
-                ]
-            },
-            yAxis: {
-                title: {
-                    text: 'Dipinjam hari ke-'
-                }
-            },
-            plotOptions: {
-                line: {
-                    dataLabels: {
-                        enabled: true
-                    },
-                    enableMouseTracking: false
-                }
-            },
-            series: [
-                <?php for ($i=0; $i < count($data7); $i+=5):?>
-                {
-                name: '<?= $data7[$i]["kategori"]; ?>',
-                data: [
-                    <?php for ($a=$i; $a < $i+5; $a++):?>
-                        <?= $data7[$a]["lamapinjam"]; ?>,
-                    <?php endfor;?>
-                    ]
-                },
-                <?php endfor;?>
-            ]
-        });
-    </script>
     <!-- Bootstrap core JavaScript-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/js/bootstrap.bundle.min.js"></script>

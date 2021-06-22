@@ -60,9 +60,6 @@ $data6 = json_decode($data6, TRUE);
                 Berikut merupakan grafik untuk menampilkan kategori film terlaris pada persewaan dari sakila berdasarkan kategori.
                 </p>
                 <!-- /.container-fluid -->
-                <br>
-                <iframe name="mondrian" src="http://localhost:8080/mondrian/index.html"></iframe>
-                <br>
             </div>
             <!-- End of Main Content -->
 
