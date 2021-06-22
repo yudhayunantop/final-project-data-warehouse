@@ -8,3 +8,4 @@ Petunjuk Instalasi
 2. Import database dari project ini kedalam MySQL.
 3. Jalankan project sesuai dengan web server yang anda gunakan
 4. Username|Password = admin|admin
+5. Jika fitur OLAP Mondrian ingin berjalan lancar, pastikan device anda telah memiliki Tomcat yang didalam webappsnya telah terpasang Mondrian
