@@ -59,6 +59,9 @@ $data4 = json_decode($data4, TRUE);
                 Berikut merupakan grafik untuk menampilkan data jumlah customer dari kategori film sakila.
                 </p>
                 <!-- /.container-fluid -->
+                <br>
+                <iframe name="mondrian" src="http://localhost:8080/mondrian/index.html" style="height: 100%; width:100%; border:none; align-content:center;"></iframe>
+                <br>
 
             </div>
             <!-- End of Main Content -->
