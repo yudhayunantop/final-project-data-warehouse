@@ -19,5 +19,6 @@ while ($row = mysqli_fetch_array($result)) {
     ));
 }
 
+
 $data4 = json_encode($hasil);
 ?>

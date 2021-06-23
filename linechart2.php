@@ -56,7 +56,7 @@ $data7 = json_decode($data7, TRUE);
                 
                 <div id="linechart" class="grafik"></div>
                 <p class="highcharts-description">
-                Berikut merupakan grafik untuk menampilkan durasi lama pinjam film setiap kategori pada persewaan dari sakila berdasarkan kategori.
+                Berikut merupakan grafik untuk menampilkan durasi lama pinjam film setiap kategori pada persewaan dari sakila berdasarkan durasi hari meminjam.
                 </p>
                 <!-- /.container-fluid -->
             </div>

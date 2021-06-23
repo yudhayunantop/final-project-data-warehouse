@@ -56,7 +56,7 @@ $data3 = json_decode($data3, TRUE);
                 
                 <div id="linechart" class="grafik"></div>
                 <p class="highcharts-description">
-                Berikut merupakan grafik untuk menampilkan kategori film terlaris pada persewaan dari sakila berdasarkan kategori.
+                Berikut merupakan grafik untuk menampilkan kategori film terlaris pada persewaan dari sakila berdasarkan jumlah sewanya.
                 </p>
                 <!-- /.container-fluid -->
             </div>
