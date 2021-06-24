@@ -1,4 +1,4 @@
-Anggota Kelompok :
+Anggota Kelompok 6:
 1. Muhammad Burhanuddin Fawwaz (18082010011 / Pararel A)
 2. Yudha Yunanto Putra (18082010032 / Pararel A)
 3. Sudewantoro Nur Muhammad (18082010039 / Pararel A)
